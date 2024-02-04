@@ -1,0 +1,38 @@
+body {
+  header.header {
+    position: sticky;
+    top: 0;
+    background-color: $dark-grey;
+    padding: 25px 0;
+
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+    }
+
+    .header-inner-wrap {
+      .app-heading {
+        border: 1px solid rgba($grey, 0.5);
+        border-radius: 10px;
+
+        @include auto-margin-side-width(600px);
+        max-width: 100%;
+        padding: 20px;
+
+        @media screen and (max-width: 767px) {
+          padding: 15px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          color: $white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
